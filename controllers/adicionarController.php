@@ -10,7 +10,7 @@ class adicionarController extends controller {
         if(empty($_SESSION['cLogin'])) {   ?>
             <script type="text/javascript">window.location.href="./login";</script>
                        
-            <?php
+            <?php 
             exit;
         } 
         
@@ -25,9 +25,8 @@ class adicionarController extends controller {
             $descricao = addslashes($_POST['descricao']);
             $estado = addslashes($_POST['estado']);
                   
-            $a->addAnuncio($titulo, $categoria, $valor, $descricao, $estado);
+            $a->addAnuncio($titulo, $categoria, $valor, $descricao, $estado); 
 
-            
             $dados['titulo'] = $titulo;
             $dados['categoria'] = $categoria;
             $dados['valor'] = $valor;
@@ -35,6 +34,7 @@ class adicionarController extends controller {
             $dados['estado'] = $estado;
       
             $dados['cats'] = $cats; 
+            
            
             ?> <div class="alert alert-success"> Produto adicionado com sucesso! </div>  <?php
         
