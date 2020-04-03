@@ -1,7 +1,10 @@
 <div class="container">
-	<h1>Meus Anúncios</h1>
 
-	<a href="<?php echo BASE_URL; ?>addanuncio" class="btn btn-info">Adicionar Anúncio</a>
+	<h1>Meus Anúncios</h1>
+	
+<a href="<?php echo BASE_URL; ?>addanuncio" class="btn btn-info">Adicionar Anúncio</a> 
+
+</br></br>
 
 	<table class="table table-striped">
 		<thead>

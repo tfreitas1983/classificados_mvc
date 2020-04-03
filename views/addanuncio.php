@@ -6,14 +6,11 @@
 		<div class="form-group">
 			<label for="categoria">Categoria:</label>
 			<select name="categoria" id="categoria" class="form-control">
-
-				<?php 
-				 foreach($cats as $cat):?> 
+				<?php foreach($cats as $cat): ?> 
 					<option value="<?php echo $cat['id']; ?>">
 						<?php echo utf8_encode($cat['nome']); ?>
 				    </option>
-				<?php endforeach;?>
-
+				<?php endforeach; ?> 
 			</select>
 		</div>
 
